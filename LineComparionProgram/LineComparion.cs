@@ -8,6 +8,7 @@ namespace LineComparionProgram
 {
     public class LineComparion
     {
+
         int x1, x2, y1, y2;
         public LineComparion(int x1, int x2, int y1, int y2)
         {
@@ -16,10 +17,11 @@ namespace LineComparionProgram
             this.y1 = y1;
             this.y2 = y2;
         }
-        public void LengthOfLine()
+        public Double calculateLength()
         {
             double result = Math.Sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
-            Console.WriteLine("Length og the Cartesian Line:" + " " + result);
+            Console.WriteLine("Length of the Cartesian Line:" + " " + result);
+            return result;
         }
     }
 }
